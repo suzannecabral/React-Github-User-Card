@@ -1,0 +1,92 @@
+h1 {
+  text-align:center;
+  margin:2rem 0 3rem 0;
+}
+
+a{
+  font-weight:bold;
+}
+
+.userCard {
+  border:1px solid #ddd;
+  max-width: 60rem;
+  margin:4rem auto 0 auto;
+  border-radius:25px;
+}
+
+
+.userCardRow {
+  display:flex;
+  flex-flow:row wrap;
+  margin:2rem;
+}
+.userCardText {
+  max-width:35rem;
+}
+.userLogin{
+  font-weight:normal;
+  color:#666;
+  font-style:italic;
+}
+
+.userImage {
+  order:-1;
+  margin: 0 3rem 0 0;
+}
+.userImage img{
+  width:180px;
+  border-radius:200px;
+}
+
+.detailsText{
+  margin:.5rem 0 0 0;
+  display:flex;
+  flex-flow:column;
+}
+
+.detailsText * {
+  margin:.4rem 0 0 0;
+}
+
+
+.workLinks {
+  display:flex;
+}
+.workLinks a{
+  margin:1.5rem 1rem 0 0;
+}
+
+
+.followerList {
+  margin:3rem auto;
+  padding:2% 4% 4% 4%;
+  max-height:50vh;
+  width:60%;
+  overflow-y:scroll;
+  
+}
+
+.followerListRow {
+ display:flex;
+ flex-flow:row wrap;
+ justify-content:center;
+}
+.followerList h3 {
+  margin:0 0 1.5rem .5rem;
+}
+
+.follower {
+  background-color:#fafbfc;
+  border:1px solid #eee;
+  border-radius:10px;
+  overflow:hidden;
+  display:flex;
+  width: 21rem;
+  margin:.5rem 2rem 0 0;
+}
+.follower h4 {
+  margin: auto 1rem;
+}
+.followerAvatar {
+  width:50px;
+}
