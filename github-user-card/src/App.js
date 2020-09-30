@@ -6,8 +6,7 @@ class App extends React.Component{
   render(){
     return(
       <div className="App">
-        <h1>Hello</h1>
-        <p>this is the app</p>
+        <h1>App</h1>
 
         <UserCard />
 

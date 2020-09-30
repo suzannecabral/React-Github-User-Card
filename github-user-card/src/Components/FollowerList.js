@@ -1,5 +1,7 @@
 import React from "react";
 import Follower from "./Follower";
+import fakeFollowers from "./fakeFollowers.json";
+import shortid from "shortid";
 
 class FollowerList extends React.Component {
     render(){
@@ -7,11 +9,15 @@ class FollowerList extends React.Component {
             <div className="followerList">
                 <h3>Followers:</h3>
                 <div className="followerListRow">
-                    <Follower />
-                    <Follower />
-                    <Follower />
-                    <Follower />
-                    <Follower />
+                    {
+                        fakeFollowers.map((person)=>{
+                            return(
+                                <Follower 
+                                    person={person}
+                                />
+                            );
+                        })
+                    }
                 </div>
             </div>
         );

@@ -1,9 +1,9 @@
 import React from "react";
 
-class ImageFrame extends React.Component{
+class UserImage extends React.Component{
     render(){
         return(
-            <div className="imageFrame">
+            <div className="userImage">
                 <div className="fakeImage">
                     <p>User Image</p>
                 </div>
@@ -12,4 +12,4 @@ class ImageFrame extends React.Component{
     }
 }
 
-export default ImageFrame;
+export default UserImage;
