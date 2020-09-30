@@ -12,7 +12,7 @@ class FollowerList extends React.Component {
                     {
                         fakeFollowers.map((person)=>{
                             return(
-                                <Follower 
+                                <Follower key={shortid.generate()}
                                     person={person}
                                 />
                             );

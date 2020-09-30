@@ -4,14 +4,23 @@ import UserImage from "./ImageFrame";
 
 class UserCard extends React.Component {
     render() {
+        const { person } = this.props;
         return(
             <div className="userCard">
-                <h2>User Card</h2>
+                <div className="userCardRow">
+                    <div>
+                        <h2>{person.name}</h2>
+                        <a href={person.html_url}>
+                            <p className="loginName">{person.login}</p>
+                        </a>
 
-                <UserImage />
-
+                        <p>Location: {person.location}</p>
+                    </div>
+                    <UserImage 
+                        person={person}
+                    />
+                </div>
                 <FollowerList />
-
             </div>
         );
     }
