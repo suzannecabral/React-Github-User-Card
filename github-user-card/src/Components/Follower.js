@@ -6,12 +6,12 @@ class Follower extends React.Component {
         const { person } = this.props
 
         return(
-            <div className="follower">
-                <a href={person.html_url}>
-                    <img src={person.avatar_url} className="followerAvatar" alt={person.login}/>
-                </a>
-                <h4>{person.login}</h4>
-            </div>
+            <a href={person.html_url}>
+                <div className="follower">
+                        <img src={person.avatar_url} className="followerAvatar" alt={person.login}/>
+                    <h4>{person.login}</h4>
+                </div>
+            </a>
         );
     }
 }
